@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "react",
+    [
+      "env",
+      {
+        "target": {
+          "browsers": ["last 2 versions"] // 告诉babel 只翻译最近2个版本的js代码
+        }
+      }
+    ]
+  ],
+  "plugins": ["transform-class-properties"] // class直接写属性的插件
+}
