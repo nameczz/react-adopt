@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --silent",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest -u",
+    "test:watch": "jest --watch",
     "format": "prettier --write \"src/**/*.{js,jsx,css,vue,json}\"",
     "lint": "eslint \"src/**/*.{js,jsx,vue}\"",
     "dev": "parcel src/index.html"

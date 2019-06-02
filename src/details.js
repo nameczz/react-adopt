@@ -8,7 +8,7 @@ const petfinder = pf({
   secret: process.env.API_SECRET
 });
 class Details extends React.Component {
-  state = { loading: true, showModal: true };
+  state = { loading: true, showModal: false };
 
   componentDidMount() {
     petfinder.pet
