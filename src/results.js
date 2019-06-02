@@ -7,7 +7,6 @@ const petfinder = pf({
   key: process.env.API_KEY,
   secret: process.env.API_SECRET
 });
-petfinder.find();
 class Results extends React.Component {
   constructor(props) {
     super(props);
