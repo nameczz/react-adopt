@@ -1,11 +1,12 @@
 import React from "react";
 import { render } from "react-dom";
 import Results from "./results";
-import { Router, Link } from "@reach/router";
+import { Router } from "@reach/router";
 import Details from "./details";
 import SearchParams from "./search-params";
 import pf from "petfinder-client";
 import { Provider } from "./search-context";
+import NavBar from "./nav-bar";
 const petfinder = pf({
   key: process.env.API_KEY,
   secret: process.env.API_SECRET
@@ -69,9 +70,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <header>
-          <Link to="/">NBA Game</Link>
-        </header>
+        <NavBar />
         <Provider value={this.state}>
           <Router>
             <Results path="/" />
